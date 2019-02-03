@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@font-face {
+    font-family: 'JobSpeed-font'; /*a name to be used later*/
+    src: url("jobspeedfont.ttf") format('truetype');
+}
+
+p {
+    width: 75%;
+}
+
+body {
+  background-color: rgba(221, 170, 219, 0.63);
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#header {
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#imgContainer {
+  background: linear-gradient(
+      45deg,
+      rgb(116, 80, 8) 12%,
+      transparent 0,
+      transparent 88%,
+      rgb(212, 149, 22) 0
+    ),
+    linear-gradient(135deg, transparent 37%, rgb(88, 170, 85) 0, rgb(170, 85, 149) 63%, transparent 0),
+    linear-gradient(70deg, transparent 37%, rgb(201, 207, 211) 0, rgb(218, 214, 199) 63%, transparent 0),
+    linear-gradient(25deg, transparent 37%, rgb(28, 124, 189) 0, rgb(78, 62, 2) 63%, transparent 0),
+
+
+    linear-gradient(45deg, transparent 37%, rgb(170, 202, 221) 0, rgb(221, 170, 219) 63%, transparent 0)
+      rgb(189, 103, 18);
+  background-size: 63px 64px;
+  height: 200px;
+}
+
+#profileImg {
+  /* height: 200%; */
+  height: 90%;
+  border-radius: 100%;
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  /* transform: translateX(-200%); */
+  margin-top: 10px;
+}
+
+#title {
+  position: absolute;
+  font-family: "JobSpeed-font";
+  text-decoration: underline;
+  font-size: 85px;
+  /* left: 0%;*/
+  top: -40px;
+  left: 25px;
+  /* background-color: rgba(221, 170, 219, 0.63); */
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #aa7161;
+    overflow: visible;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    border-radius: 10px 10px 10px 0px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .topnav a:hover {
+    /* border-top: 3px solid red; */
+    background-color:  #815144;
+    border-radius: 10px 10px 10px 0px;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid red;
+  }
+
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px 10px 10px 0px;
+  }
+  
+  /* The container <div> - needed to position the dropup content */
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropup content (Hidden by Default) */
+  .dropup-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px 10px 10px 0px;
+    bottom: 50px;
+    background-color: #e4c7c0;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropup */
+  .dropup-content a {
+    box-sizing: border-box;
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Change color of dropup links on hover */
+  .dropup-content a:hover  {background-color: #ddd}
+  
+  /* Show the dropup menu on hover */
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropup button when the dropup content is shown */
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+
+  .parent-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0% 5%;
+   }
+
+  .container {
+    box-sizing: border-box;
+    width: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 2px solid black;
+  }
+
+  .container * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery {
+    resize: both;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 25%;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 2%;
+    padding-bottom: 3%;
+  }
+
+  .picture {
+    margin: 2%;
+    width: 100%;
+    height: auto;
+    transition: transform .2s;
+  }
+
+  .picture:hover {
+    transform: scale(1.75);
+  }
+
+  .topnav span {
+    text-align: right;
+    color: white;
+    font-size: 125%;
+    float: right;
+    padding: 1% 2.5% 0 0;
+  }
+
+  .about-me-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 1%;
+    padding-bottom: 3%;
+  }
+
+  .about-me-container p, ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
